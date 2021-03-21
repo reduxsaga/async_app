@@ -9,9 +9,9 @@ class AppState {
   final PostsByReddit postsByReddit;
 
   const AppState({
-    @required this.selectedReddit,
-    @required this.posts,
-    @required this.postsByReddit,
+    required this.selectedReddit,
+    required this.posts,
+    required this.postsByReddit,
   });
 
   factory AppState.initial() {
@@ -23,9 +23,9 @@ class AppState {
   }
 
   AppState copyWith({
-    bool selectedReddit,
-    Posts posts,
-    PostsByReddit postsByReddit,
+    String? selectedReddit,
+    Posts? posts,
+    PostsByReddit? postsByReddit,
   }) {
     return AppState(
       selectedReddit: selectedReddit ?? this.selectedReddit,

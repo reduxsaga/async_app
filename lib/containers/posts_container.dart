@@ -22,7 +22,7 @@ class PostsContainer extends StatelessWidget {
 class _ViewModel {
   final Posts posts;
 
-  _ViewModel({@required this.posts});
+  _ViewModel({required this.posts});
 
   static _ViewModel fromStore(Store<AppState> store) {
     return _ViewModel(posts: store.state.posts);

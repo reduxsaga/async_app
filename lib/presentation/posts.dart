@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class PostsControl extends StatelessWidget {
   final Posts posts;
 
-  PostsControl({@required this.posts});
+  PostsControl({required this.posts});
 
   @override
   Widget build(BuildContext context) {

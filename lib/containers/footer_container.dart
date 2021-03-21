@@ -19,9 +19,9 @@ class FooterContainer extends StatelessWidget {
 }
 
 class _ViewModel {
-  final DateTime lastUpdated;
+  final DateTime? lastUpdated;
 
-  _ViewModel({@required this.lastUpdated});
+  _ViewModel({required this.lastUpdated});
 
   static _ViewModel fromStore(Store<AppState> store) {
     return _ViewModel(

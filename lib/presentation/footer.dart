@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class FooterControl extends StatelessWidget {
   FooterControl({
-    @required this.lastUpdated,
+    required this.lastUpdated,
   });
 
-  final DateTime lastUpdated;
+  final DateTime? lastUpdated;
 
   @override
   Widget build(BuildContext context) {

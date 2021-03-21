@@ -4,15 +4,15 @@ import 'package:meta/meta.dart';
 class Posts {
   final List<String> items;
   final bool isFetching;
-  final DateTime lastUpdated;
+  final DateTime? lastUpdated;
 
-  const Posts({@required this.items, @required this.isFetching, @required this.lastUpdated});
+  const Posts({required this.items, required this.isFetching, required this.lastUpdated});
 
   factory Posts.initial() {
     return Posts(items: [], isFetching: false, lastUpdated: null);
   }
 
-  Posts copyWith({List<String> items, bool isFetching, bool isRefreshing, DateTime lastUpdated}) {
+  Posts copyWith({List<String>? items, bool? isFetching, bool? isRefreshing, DateTime? lastUpdated}) {
     return Posts(
         items: items ?? this.items,
         isFetching: isFetching ?? this.isFetching,

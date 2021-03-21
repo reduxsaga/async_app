@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 class PickerControl extends StatelessWidget {
   PickerControl({
-    @required this.value,
-    @required this.options,
-    @required this.onChange,
-    @required this.onRefresh,
+    required this.value,
+    required this.options,
+    required this.onChange,
+    required this.onRefresh,
   });
 
   final String value;
   final List<String> options;
   final Function(String) onChange;
-  final Function onRefresh;
+  final VoidCallback onRefresh;
 
   @override
   Widget build(BuildContext context) {

@@ -7,15 +7,16 @@ import 'package:redux/redux.dart';
 import 'config/configureStore.dart';
 import 'containers/picker_container.dart';
 import 'containers/posts_container.dart';
+import 'models/appState.dart';
 
 void main() {
   runApp(MyApp(store: configureStore()));
 }
 
 class MyApp extends StatelessWidget {
-  final Store store;
+  final Store<AppState> store;
 
-  MyApp({Key key, this.store}) : super(key: key);
+  MyApp({required this.store}) : super();
 
   @override
   Widget build(BuildContext context) {

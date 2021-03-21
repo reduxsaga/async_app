@@ -26,9 +26,9 @@ class PickerContainer extends StatelessWidget {
 class _ViewModel {
   final String value;
   final Function(String) onChange;
-  final Function onRefresh;
+  final VoidCallback onRefresh;
 
-  _ViewModel({@required this.value, @required this.onChange, @required this.onRefresh});
+  _ViewModel({required this.value, required this.onChange, required this.onRefresh});
 
   static _ViewModel fromStore(Store<AppState> store) {
     var selectedReddit = selectedRedditSelector(store.state);

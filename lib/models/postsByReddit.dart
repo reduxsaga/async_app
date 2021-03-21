@@ -5,13 +5,13 @@ import 'package:meta/meta.dart';
 class PostsByReddit {
   final Map<String, Posts> items;
 
-  const PostsByReddit({@required this.items});
+  const PostsByReddit({required this.items});
 
   factory PostsByReddit.initial() {
     return PostsByReddit(items: Map<String, Posts>());
   }
 
-  PostsByReddit copyWith({Map<String, Posts> items}) {
+  PostsByReddit copyWith({Map<String, Posts>? items}) {
     return PostsByReddit(items: items ?? this.items);
   }
 
